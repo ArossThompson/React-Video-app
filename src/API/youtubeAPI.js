@@ -9,4 +9,4 @@ export default axios.create({
         maxResults: 10,
         key: KEY
     }
-})
+});
