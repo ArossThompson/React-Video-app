@@ -19,10 +19,6 @@ const App = () => {
       setSelectedVideo(response.data.items[0]);
   }
 
-  const onVideoSelect = (video) => {
-      setSelectedVideo(video);
-  }
-
   useEffect(() => {
     onTermSubmit('news');
   }, [])
@@ -42,7 +38,7 @@ const App = () => {
           <div className="five wide column">
             <VideoList
                 videos={videos} 
-                onVideoSelect={onVideoSelect}
+                onVideoSelect={setSelectedVideo}
             />
           </div>
         </div>
